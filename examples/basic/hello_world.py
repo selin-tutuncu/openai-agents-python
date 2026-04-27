@@ -1,20 +1,25 @@
 import asyncio
+from datetime import datetime
+from agents import Agent, Runner, function_tool
 
-from agents import Agent, Runner
 
+@function_tool
+def check_time() -> str:
+    """Şu anki sistem saatini verir."""
+    return datetime.now().strftime("%H:%M")
 
 async def main():
+
     agent = Agent(
         name="Assistant",
-        instructions="You only respond in haikus.",
+        model="gpt-5-nano",
+        instructions="""Normal iletişim kur.Kullanıcı saat sorarsa check_time toolunu kullan.""",
+        tools=[check_time],
     )
 
-    result = await Runner.run(agent, "Tell me about recursion in programming.")
-    print(result.final_output)
-    # Function calls itself,
-    # Looping in smaller pieces,
-    # Endless by design.
+    result = await Runner.run(agent,"Saat kaç?",)
 
+    print(result.final_output)
 
 if __name__ == "__main__":
     asyncio.run(main())
