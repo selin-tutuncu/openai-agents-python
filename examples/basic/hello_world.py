@@ -13,7 +13,7 @@ async def main():
     agent = Agent(
         name="Assistant",
         model="gpt-5-nano",
-        instructions="""Normal iletişim kur.Kullanıcı saat sorarsa check_time toolunu kullan.""",
+        instructions="""Normal iletişim kur.Kullanici saat sorarsa check_time toolunu kullan.""",
         tools=[check_time],
     )
 
