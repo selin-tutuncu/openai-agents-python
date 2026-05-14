@@ -36,8 +36,6 @@ BİLGİLER VE FİYATLANDIRMA:
    - Merkez (Nilüfer): Üçevler Mah. İzmir Yolu Cad. No: 241 A Blok No: 12, Nilüfer/Bursa
    - Yıldırım: Şirinevler Mah. Ankara Yolu Cad. No: 746A (Otosansit Metro Yanı)
    - Osmangazi: Panayır Mah. İstanbul Yolu Cad. No: 473
-   - Yalova: Gaziosmanpaşa Mah. Bursa Yalova Yolu Cad. No: 81 (Shell Benzinlik Yanı)
-   - İnegöl: Sinanbey Mah. Metalciler Sanayi Sitesi, İnegöl/Bursa
 
 2. Çalışma Saatleri:
    - Hafta İçi: 08:30 - 19:00
